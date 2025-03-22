@@ -2,6 +2,16 @@ Metro Simülasyonu Projesi🚇
 
 Bu proje, bir metro ağında en az aktarmalı ve en hızlı rotayı bulmak için BFS ve A* algoritmalarını kullanır.
 
+📌 Kullanılan Teknolojiler ve Kütüphaneler
+
+Python 3
+
+collections: BFS için kuyruk (deque) yapısı oluşturmak için kullanıldı.
+
+heapq: A* algoritması için öncelik kuyruğu yapısında kullanıldı.
+
+defaultdict: Metro hattının graf veri yapısında tutulmasını sağladı.
+
 📌 Özellikler
 
 En Az Aktarmalı Rota: BFS kullanarak en kısa durak sayısını hesaplar.
@@ -28,6 +38,8 @@ Komşu istasyonlar ziyaret edilir.
 
 En kısa durak sayısıyla hedefe ulaşılır.
 
+Neden BFS? Çünkü en kısa durak sayısını bulmada etkilidir.
+
 🔹 A* (En Hızlı Rota)
 
 Öncelik kuyruğu (heapq) ile en hızlı rota hesaplanır.
@@ -35,6 +47,8 @@ En kısa durak sayısıyla hedefe ulaşılır.
 Her istasyon için toplam süre belirlenir.
 
 En düşük süreli yol işlenerek hedefe ulaşılır.
+
+Neden A?* Çünkü en kısa sürede ulaşımı garanti eden bir yol bulur.
 
 🛠 Test Senaryoları
 
